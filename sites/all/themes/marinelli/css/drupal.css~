@@ -69,17 +69,12 @@ div.item-list ul.pager li.pager-prev{ /* pager */
 
 div.item-list ul.pager li.pager-current,
 div.item-list ul.pager li.pager-item a{ /* pager */
-	padding:0.2em 0.5em 0.2em 0.5em;
+	padding:0.2em 0.5em;
 }
 
 #block-user-login .item-list ul{
 	margin-left:10px;
 }
-
-body.page-taxonomy-term h1#page-title{ /* taxonomy term page */
-	padding:2px 0 2px 40px;
-}
-
 
 
 /* lists in blocks */
@@ -159,19 +154,33 @@ div.messages.error a{
 .item-list ul.pager a{
 	text-decoration: none;
 }
-
 #content .item-list ul.pager li.pager-item a{
-	background: #eee;
-	color:#666;
-	border:1px solid #ccc;
+    background: #1D1D1E;
+    border: 1px solid #090A0B;
+    box-shadow: 0 0 1px #5D5D61 inset;
+    color: #F25322;
+    display: block;
+    float: left;
+    text-decoration: none;
+margin: 0 1px;
+    padding: 5px 7px;
+margin-top:-5px;
+
 }
 
 #content .item-list ul.pager li.pager-current,
 #content .item-list ul.pager li.pager-item a:hover{
-	font-weight: bold;
-	color:white;
-	background: #054b81;
-	border:1px solid #4585af;
+	    background: none repeat scroll 0 0 #151516;
+    border: 1px solid #474747;
+    box-shadow: none;
+    color: #FFFFFF;
+    cursor: default;
+    font-weight: 700;
+    text-decoration: none;
+margin: 0 1px;
+    padding: 5px 7px;
+
+
 }
 
 

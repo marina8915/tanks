@@ -10,7 +10,8 @@
 
 #navigation-primary{
 	float: left;
-	width: 100%;
+	width: 999px;
+margin-left:1px;
 }
 	
 #navigation-primary ul{

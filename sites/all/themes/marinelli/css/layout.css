@@ -99,7 +99,7 @@ width:1000px;
 #contentWrapper{ 
  margin-left:1px;
  background: url("../img/backgrounds/ui-bg-top.jpg")no-repeat scroll 0 0 transparent;
-width: 998px;
+width: 999px;
 }
 
 .ie7 #pageBorder{ /* for IE7 */
@@ -231,3 +231,30 @@ float:left;}
 	text-transform:uppercase;
 
 }
+#block-quicktabs-quicktabstab .title,
+.views-slideshow-cycle-main-frame-row-item .teaser-title{ border-bottom: none;
+    font-size: 0;}
+
+.ui-state-default{color: #909091;
+background: url("../img/backgrounds/tab.png") no-repeat scroll right -38px transparent;
+    color: #909091;
+    float: left;
+    font-family: "WarHeliosCondC",Arial Narrow,arial,sans-serif;
+    font-size: 17px;
+    font-stretch: condensed;
+    height: 34px;
+    line-height: 34px;
+    margin-right: -50px;
+    padding: 0 40px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.54);
+    text-transform: uppercase;
+padding-top: 0;}
+.ui-state-active{border: medium none;
+    color: #E5E8EB;
+    cursor: default;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.54), 0 0 8px rgba(255, 255, 255, 0.24);
+ background: url("../img/backgrounds/tab.png") no-repeat scroll 0 0 transparent;}
+
+#qt-quicktabstab-ui-tabs1,
+#qt-quicktabstab-ui-tabs2{background: url("../img/backgrounds/divider.png") no-repeat scroll 0 0 transparent; padding-top:10px;}
+

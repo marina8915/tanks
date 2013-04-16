@@ -11,6 +11,7 @@
 #navigation-primary{
 	float: left;
 	width: 100%;
+margin-left:1px;
 }
 	
 #navigation-primary ul{
@@ -53,17 +54,6 @@ color: #D2D9D9;
    padding-left: 33px;
     padding-right: 33px;
 }
-	
-#navigation-primary > ul > li > a.active,
-#navigation-primary > ul > li > h2 > a.active,
-#navigation-primary > ul > li > a:hover,
-#navigation-primary > ul > li > h2 > a:hover,
-#navigation-primary > ul > li:hover > a,
-#navigation-primary > ul > li:hover > h2 > a{  /* active and hover state of the first level */
-background:url("../img/backgrounds/b-portal-menu.png")  scroll right -44px transparent;
-
-}
-	
 #navigation-primary > ul > li > a:hover,
 #navigation-primary > ul > li > h2 > a:hover,	
 #navigation-primary > ul > li:hover > a,
@@ -71,6 +61,17 @@ background:url("../img/backgrounds/b-portal-menu.png")  scroll right -44px trans
 
 background: url("../img/backgrounds/b-portal-menu.png") repeat scroll right 0px transparent;
 }
+	
+#navigation-primary > ul > li > a.active,
+#navigation-primary > ul > li > h2 > a.active,
+#navigation-primary > ul > li > a.active:hover,
+#navigation-primary > ul > li > h2 > a.active:hover,
+#navigation-primary > ul > li:hover > a.active,
+#navigation-primary > ul > li:hover > h2 > a.active{  /* active and hover state of the first level */
+background:url("../img/backgrounds/b-portal-menu.png")  scroll right -44px transparent;
+
+}
+	
 
 .mega{ /* submenu container */
 	position:absolute;

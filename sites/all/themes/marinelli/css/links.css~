@@ -20,6 +20,9 @@ a:active {color:#f97e05;}
 a:focus{outline: none;}
 a img{border: none;}*/
 
+a{color: #CACBCC; text-decoration:none;}
+a:hover{text-decoration:underline;}
+
 #site-title a:hover,
 #site-slogan a:hover,
 .block h2.title a{
@@ -142,25 +145,7 @@ text-decoration:none;
     border-radius: 3px 3px 3px 3px;
 box-shadow: 0 0 0 1px rgba(205, 205, 205, 0.15);
 text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);}
-/*.node-advpoll form div div.form-item{background: url("../img/backgrounds/btn-bg.png") no-repeat scroll 100% -60px transparent;
-    border: medium none;
-    border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 0 0 1px rgba(205, 205, 205, 0.15);
-    color: #FFFFFF;
-    cursor: pointer;
-    float: left;
-    font-family: Arial,Sans-Serif !important;
-    font-size: 13px;
-    font-weight: 700;
-    height: 29px;
-    line-height: 29px;
-    margin-right: -35px;
-    min-width: 50px;
-    padding: 0 22px 1px;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-    vertical-align: middle;}*/
+
 /*view-id-img_block*/
 .view-id-img_block .views-field-field-link {background: url("../img/backgrounds/bg-text-img.png") no-repeat scroll 0 0 transparent;
     display: inline;
@@ -250,5 +235,21 @@ border:0;}
     color: white;
     text-decoration: underline;}
 
+/*slider*/
+.slider-home  h2 {text-indent:-1000em; display:none; }
+.slider-home  h2 a{text-indent:-1000em;}
+.node-slider .teaser-text {position:relative; color: #FFFFFF;}
+.node-slider .teaser-text .field-type-text-with-summary .field-item,
+.node-slider .teaser-text .field-type-link-field{position:absolute; margin-top:230px; width:664px; padding-left:20px;
+ background: url("../img/backgrounds/carousel-text-bg.png") repeat scroll 0 0 transparent;  }
 
+.node-slider .teaser-text .field-type-link-field{margin-top:191px; color: #FFFFFF;}
+.node-slider .teaser-text .field-type-link-field a{ display:block; color: #FFFFFF;
+text-decoration: none;
+    font-family: "WarHeliosCondCBold",Arial Narrow,arial,sans-serif;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.node-slider .teaser-text .field-type-text-with-summary .field-item p{color: #979899; height:34px;}
 

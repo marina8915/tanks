@@ -252,7 +252,7 @@ h2 .field-content a,
 
 .view-content img, .field-name-field-first-img img { float: left;
 margin-right:17px;
- padding-bottom: 10px;}
+ padding-bottom: 15px;}
 
 .view-content{float:none;}
 div p.data, div p.category, div.field-type-datetime, div.field-type-datetime .field-items, div.field-type-datetime .field-item{
@@ -292,6 +292,7 @@ text-decoration:none;
 text-decoration:none;
 }
 .view-id-home td,
+.view-dom-id-f84d3f8fe50970efedf50b55cb961e66 td,
 .view-important-news td,
 .view-tournaments td,
 .view-news td,
