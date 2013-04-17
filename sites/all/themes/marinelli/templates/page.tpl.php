@@ -13,12 +13,21 @@
   </div>
   <!--end top bar-->
 <?php endif; ?>
-
+<?php if ($secondary_menu): ?>
+      <!--start secondary navigation-->
+      <div id="navigation-secondary" class="sitemenu">
+        <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'clearfix', 'secondary-menu')))); ?>
+      </div>
+      <!--end secondary-navigation-->
+    <?php endif; ?>
 <!--start framework container-->
 <div class="container_12 <?php print $layout_width; ?>" id="totalContainer">
+
+
   <?php if($topRegion): ?>
     <!--start top section-->
     <div id="top" class="outsidecontent">
+		
 
       <?php if($page['utility_top']): ?>
         <!--start top utility box-->
@@ -90,13 +99,7 @@
       <!--end advertise-->
     <?php endif; ?>
 		
-		<?php if ($secondary_menu): ?>
-      <!--start secondary navigation-->
-      <div id="navigation-secondary" class="sitemenu">
-        <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'clearfix', 'secondary-menu')))); ?>
-      </div>
-      <!--end secondary-navigation-->
-    <?php endif; ?>
+
 
     <!-- start contentWrapper-->
     <div id="contentWrapper">

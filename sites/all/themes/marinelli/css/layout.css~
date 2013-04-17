@@ -236,7 +236,7 @@ float:left;}
     font-size: 0;}
 
 .ui-state-default{color: #909091;
-background: url("../img/backgrounds/tab.png") no-repeat scroll right -36px transparent;
+background: url("../img/backgrounds/tab.png") no-repeat scroll right -38px transparent;
     color: #909091;
     float: left;
     font-family: "WarHeliosCondC",Arial Narrow,arial,sans-serif;
@@ -258,3 +258,48 @@ padding-top: 0;}
 #qt-quicktabstab-ui-tabs1,
 #qt-quicktabstab-ui-tabs2{background: url("../img/backgrounds/divider.png") no-repeat scroll 0 0 transparent; padding-top:10px;}
 
+
+/*footer*/
+
+#footer{background: url("../img/backgrounds/ooter_bg.jpg") no-repeat scroll 0 0 #28282C;
+    font-family: Arial,"Helvetica CY",Helvetica,sans-serif;
+    font-size: 12px;
+    height: 160px;
+    line-height: 1.2;
+    overflow: hidden;
+    padding: 25px 24px 0;
+    position: relative;
+    width: 952px;
+    z-index: 2;}
+#footer ul{ float: left;}
+#footer ul li{ 
+    margin: 0 10px 0 0;
+    width: 130px;
+ text-decoration: none;
+  padding: 3px 0;
+font-family: Arial,"Helvetica CY",Helvetica,sans-serif;
+    line-height: 1.2;}
+#footer ul li a{color: #979899;}
+ul li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+}
+#footer  h2{  color: #B4B4B4;
+    cursor: default;
+    font-weight: bold;
+font-family: Arial,"Helvetica CY",Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+padding-left:20px;}
+
+#footer #block-menu-menu-world-of-tanks .block-title{background: url("../img/icons/ico-footer-wot.png") no-repeat scroll 0 0 transparent;}
+#footer #block-menu-menu-account .block-title{background: url("../img/icons/ico-footer-account.png") no-repeat scroll 0 0 transparent;}
+#footer #block-menu-menu-community .block-title{background: url("../img/icons/ico-footer-community.png") no-repeat scroll 0 0 transparent;}
+#footer #block-menu-menu-support .block-title{background: url("../img/icons/ico-footer-support.png") no-repeat scroll 0 0 transparent;}
+
+.region-footer .block-menu{width:154px; float:left;}
+.region-footer .content{margin-top:10px;}
+.region-footer .block-block{width:265px; float:left;}
+.region-footer .block-block p{  margin: 0 0 5px;   line-height: 133%;
+    word-wrap: break-word;   font-family: Arial,"Helvetica CY",Helvetica,sans-serif;   font-size: 11px;  color: #979899;}
+.region-footer .block-block p em{ font-style:normal;}
