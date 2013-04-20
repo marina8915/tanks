@@ -1,0 +1,76 @@
+<?php
+
+function myTWITTER_menu()
+{
+    $items["mymodule/form"] = array(
+        'title'=> 'Форма twitter',
+        'page callback' => 'render_page',
+        'access callback'=> TRUE,
+        'page arguments' => array(1),);
+    $items['result'] = array(
+        'title' => 'tweet result',
+        'page callback' => 'result',
+	'access callback' => 'user_access',
+        'page arguments' => array(2),
+    );
+
+    return $items;
+}
+function render_page(){
+    $form = drupal_get_form('my_first_form');
+    $form = drupal_render($form);
+    return $form;
+}
+function my_first_form($form, &$form_state){
+    $form=array();
+    $form['login'] = array(
+        '#type'	=> 'textfield',
+        '#title' => t('Ім’я'),
+        '#default_value' => t(''),
+    );
+
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Отримати останнє повідомлення'),
+    );
+    return $form;
+}
+
+function result(){
+    $name = variable_get('name');
+
+    $tweets_result = file_get_contents("https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name={$name}&count=5");
+
+        $data = json_decode($tweets_result);
+
+    return theme('myTWITTER',array('data'=>$data));
+}
+
+
+function my_first_form_submit($form, &$form_state){
+
+   variable_set('name', $form_state['values']['login']);
+
+    $form_state['redirect'] = 'result';
+}
+
+
+function my_first_form_validate($form, &$form_state){
+    if(mb_strlen($form_state['values']['login'])==''){
+        form_set_error('login', t('Поле пусте'));
+    }
+    if(mb_strlen($form_state['values']['login'])<3){
+        form_set_error('login', t('Слишком короткое имя.'));
+    }
+
+}
+function my_first_form_theme() {
+    return array(
+        'myTWITTER' => array(
+            // шлях до файла шаблона my_mod.tpl.php
+
+            'template' => 'myTWITTER',
+            // змінні які будуть доступні в шаблоні
+        )
+    );
+}

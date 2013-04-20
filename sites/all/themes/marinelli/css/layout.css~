@@ -303,3 +303,28 @@ padding-left:20px;}
 .region-footer .block-block p{  margin: 0 0 5px;   line-height: 133%;
     word-wrap: break-word;   font-family: Arial,"Helvetica CY",Helvetica,sans-serif;   font-size: 11px;  color: #979899;}
 .region-footer .block-block p em{ font-style:normal;}
+.b-footer-copyr_wg a {
+    display: block;
+    height: 63px;
+    width: 109px;
+}
+.b-footer-copyr_wg {
+    background: url("../img/backgrounds/logo-wg.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    margin: -25px 0 0;
+    padding: 14px 9px 22px 16px;
+}
+
+.b-footer-copyr_bw {
+    background: url("../img/backgrounds/logo-bw.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    margin: -25px 0 0;
+    padding: 43px 29px 28px 9px;
+}
+
+
+.b-footer-copyr_bw a {
+    display: block;
+    height: 28px;
+    width: 86px;
+}

@@ -1,0 +1,63 @@
+<?php
+
+function mymenu_menu()
+{
+    $items["mymodule/form"] = array(
+        'title'=> 'Форма twitter',
+        'page callback' => 'render_page',
+        'access callback'=> TRUE,
+        'page arguments' => array(1),);
+    $items['result'] = array(
+        'title' => 'tweet result',
+        'page callback' => 'result',
+'access callback' => 'user_access',
+        'page arguments' => array(2),
+    );
+
+    return $items;
+}
+function render_page(){
+    $form = drupal_get_form('my_first_form');
+    $form = drupal_render($form);
+    return $form;
+}
+function my_first_form($form, &$form_state){
+    $form=array();
+    $form['login'] = array(
+        '#type'	=> 'textfield',
+        '#title' => t('Ім’я'),
+        '#default_value' => t(''),
+    );
+
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Отримати останнє повідомлення'),
+    );
+    return $form;
+}
+
+function result(){
+   
+
+}
+
+
+
+function my_first_form_submit($form, &$form_state){
+	 $name = variable_get('name');
+$user_info = simplexml_load_file('http://twitter.com/users/show.xml?screen_name='.$name);
+$user_id = $user_info[0]->id;
+$timeline = simplexml_load_file('http://twitter.com/statuses/user_timeline/'.$user_id.'.rss');
+}
+
+
+function my_first_form_validate($form, &$form_state){
+    if(mb_strlen($form_state['values']['login'])==''){
+        form_set_error('login', t('Поле пусте'));
+    }
+    if(mb_strlen($form_state['values']['login'])<3){
+        form_set_error('login', t('Слишком короткое имя.'));
+    }
+
+}
+
